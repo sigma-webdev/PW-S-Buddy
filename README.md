@@ -5,5 +5,4 @@
 ![image](https://github.com/sigma-webdev/PW-S-Buddy/assets/107506646/3cf8592b-152b-4b4a-8a8b-1aa09da995f5)
 
 
-.\assest\pwbuddy.png
 with responsive design 
