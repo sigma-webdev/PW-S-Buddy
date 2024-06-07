@@ -1,4 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
+import careerImage1 from "../assest/meet.gif";
+import careerImage2 from "../assest/img.jpg";
+import careerImage4 from "../assest/js.jpg";
+import careerImage3 from "../assest/images (1).jpg";
 import amazonLogo from "../assest/Flipkart-Logo.png";
 import flipkartLogo from "../assest/Microsoft-Logo1.jpg";
 import oracleLogo from "../assest/Oracle-Logo-1995-Present.png";
@@ -8,7 +12,6 @@ import microsoftLogo from "../assest/th (2).jpg";
 import backgroundImage from "../assest/bg.jpg";
 import mentorImage from "../assest/feature-2-1.svg";
 import profilePhoto from "../assest/image.png";
-// import careerImage from "../assest/Meet-your-mentor_Blog-cover-image-1.gif";
 
 function Herosection() {
   const companies = [
@@ -19,7 +22,60 @@ function Herosection() {
     { logo: GoogleLogo },
     { logo: microsoftLogo },
   ];
+  const [activeTab, setActiveTab] = useState("tab1");
 
+  const renderImage = () => {
+    switch (activeTab) {
+      case "tab1":
+        return (
+          <img
+            src={careerImage1}
+            alt="Mock Interview"
+            className="w-full  max-w-md md:max-w-lg rounded-lg"
+          />
+        );
+      case "tab2":
+        return (
+          <img
+            src={careerImage2}
+            alt="Resume Review"
+            className="w-full max-w-md md:max-w-lg rounded-lg"
+          />
+        );
+      case "tab3":
+        return (
+          <img
+            src={careerImage3}
+            alt="Career Guidance"
+            className="w-full max-w-md md:max-w-lg rounded-lg"
+          />
+        );
+      case "tab4":
+        return (
+          <img
+            src={careerImage4}
+            alt="Placement Preparation"
+            className="w-full max-w-md md:max-w-lg rounded-lg"
+          />
+        );
+      default:
+        return null;
+    }
+  };
+
+  const renderDescription = (tab, title, description) => (
+    <li className="mb-4">
+    <button
+      className={`text-left text-white p-4 rounded-md transition-opacity duration-300 ${
+        activeTab === tab ? "bg-blue-500 " : "bg-transparent opacity-75"
+      }`}
+      onClick={() => setActiveTab(tab)}
+    >
+      <h2 className="text-2xl font-semibold">{title}</h2>
+      <p className={`mt-2 ${activeTab === tab ? "text-md" : "text-base"}`}>{description}</p>
+    </button>
+  </li>
+  );
   return (
     <>
       {/* 1st  */}
@@ -123,43 +179,43 @@ function Herosection() {
         </div>
       </div>
       {/* 4rth one side text another side img */}
-      {/* <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-100">
-      <div className="flex flex-col md:flex-row items-center bg-white shadow-lg rounded-lg p-6 md:p-10 max-w-6xl mx-auto">
-        <div className="flex-1 text-center md:text-left p-6 md:p-10">
-          <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
-            Empower your career with Expert Guidance.
-          </h1>
-          <p className="text-lg md:text-xl mb-6">
-            Connect with experienced professionals for tailored advice, interview practice, and career insights.
-          </p>
-          <ul className="text-lg md:text-xl space-y-4">
-            <li className="mb-4">
-              <h2 className="text-2xl font-semibold text-gray-900">Mock Interview</h2>
-              <p>Hone your skills with personalized mock interviews led by experienced professionals for confidence and success.</p>
-            </li>
-            <li className="mb-4">
-              <h2 className="text-2xl font-semibold text-gray-900">Resume Review</h2>
-              <p>Get expert feedback and guidance on crafting a standout resume to land your dream job.</p>
-            </li>
-            <li className="mb-4">
-              <h2 className="text-2xl font-semibold text-gray-900">Career Guidance</h2>
-              <p>Navigate your career path with personalized advice and insights from seasoned professionals.</p>
-            </li>
-            <li className="mb-4">
-              <h2 className="text-2xl font-semibold text-gray-900">Placement Preparation</h2>
-              <p>Prepare for job placements with tailored guidance and support from industry experts for a competitive edge.</p>
-            </li>
-          </ul>
-        </div>
-        <div className="flex-1 flex justify-center">
-          <img
-            src={careerImage}
-            alt="Career Guidance"
-            className="w-full max-w-md md:max-w-lg rounded-lg"
-          />
+      <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-blue-600">
+        {" "}
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4  mt-14">
+          Empower your career with Expert Guidance.
+        </h1>
+        <p className="text-lg md:text-xl text-white mb-4">
+          Connect with experienced professionals for tailored advice, interview
+          practice, and career insights.
+        </p>
+        <div className="flex flex-col md:flex-row items-center rounded-lg p-6 md:p-10 max-w-6xl mx-auto">
+          <div className="flex-1 text-center md:text-left  ">
+            <ul className="text-lg md:text-xl space-y-4  ">
+              {renderDescription(
+                "tab1",
+                "Mock Interview",
+                "Hone your skills with personalized mock interviews led by experienced professionals for confidence and success."
+              )}
+              {renderDescription(
+                "tab2",
+                "Resume Review",
+                "Get expert feedback and guidance on crafting a standout resume to land your dream job."
+              )}
+              {renderDescription(
+                "tab3",
+                "Career Guidance",
+                "Navigate your career path with personalized advice and insights from seasoned professionals."
+              )}
+              {renderDescription(
+                "tab4",
+                "Placement Preparation",
+                "Prepare for job placements with tailored guidance and support from industry experts for a competitive edge."
+              )}
+            </ul>
+          </div>
+          <div className="flex-1 flex justify-center">{renderImage()}</div>
         </div>
       </div>
-    </div> */}
     </>
   );
 }
