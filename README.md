@@ -5,6 +5,7 @@
 ![image](https://github.com/sigma-webdev/PW-S-Buddy/assets/107506646/3cf8592b-152b-4b4a-8a8b-1aa09da995f5)
 ![image](https://github.com/sigma-webdev/PW-S-Buddy/assets/107506646/e39ea7a1-9e31-4c1e-a961-1c714d1ac571)
 ![image](https://github.com/sigma-webdev/PW-S-Buddy/assets/107506646/ee9185da-ffd8-48bf-a2d1-12125e87dba9)
+![image](https://github.com/sigma-webdev/PW-S-Buddy/assets/107506646/2ec7b32a-37c3-418b-866d-d09edef6b5a8)
 
 
 with responsive design 
