@@ -1,10 +1,14 @@
 import React from "react";
-import Homepage from "./Components/Homepage";
+import Navbar from "./Components/LandingPage/Navbar";
+import Footer from "./Components/LandingPage/Footer";
+import MainRoutes from './Components/Routes/MainRoutes';
 
 function App() {
   return (
     <div>
-      <Homepage />
+      <Navbar />
+      <MainRoutes/>
+      <Footer />
     </div>
   );
 }

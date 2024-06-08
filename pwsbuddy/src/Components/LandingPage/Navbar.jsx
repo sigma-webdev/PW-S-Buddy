@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import logo from "../assest/pwbuddy.png";
+import logo from "../../assest/pwbuddy.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
