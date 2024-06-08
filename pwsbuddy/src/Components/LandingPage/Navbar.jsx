@@ -24,7 +24,7 @@ function Navbar() {
           </div>
           <div className="hidden md:flex md:mr-20 lg:mr-40 space-x-4">
             <a
-              href="/signup"
+              href="/signin"
               className="text-gray-800 px-4 py-2 hover:bg-gray-200 hover:rounded-full"
             >
               Sign In

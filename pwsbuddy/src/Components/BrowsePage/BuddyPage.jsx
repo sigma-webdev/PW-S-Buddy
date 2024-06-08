@@ -9,7 +9,7 @@ const buddies = [
     institute: "IIT Delhi",
     image:
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
-    skills: ["cloud", "web", "ui/ux", "dsa", "AI/ML", "Interview Prep"],
+    skills: ["cloud", "web", "ui/ux", "dsa", "AI/ML"],
   },
   {
     name: "Ravi Kumar",
@@ -105,7 +105,7 @@ const buddies = [
     name: "Rahul Desai",
     role: "SDE-1",
     company: "Google",
-    institute: "University Institute of Technology, RGPV",
+    institute: "UIT RGPV",
     image:
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
     skills: ["dsa", "cp"],
@@ -141,7 +141,7 @@ const buddies = [
     name: "Rekha Pandey",
     role: "Software Engineer",
     company: "HSBC",
-    institute: "Raj Kumar Goel Institute of Technology, Ghaziabad",
+    institute: "Raj Kumar Goel Institute of Technology",
     image:
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
     skills: ["dsa", "dev"],
@@ -162,9 +162,9 @@ const BuddyPage = () => {
         Direct access to buddies for guidance and mock interviews. Elevate your
         College journey with urBuddy.
       </p>
-      <div className="flex flex-wrap p-20 mx-2">
+      <div className="flex flex-wrap md:p-10  p-6 mx-4">
   {buddies.slice(0, visibleBuddies).map((buddy, index) => (
-    <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-2">
+    <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4">
       <BuddyCard buddy={buddy} />
     </div>
   ))}
@@ -180,6 +180,7 @@ const BuddyPage = () => {
           </button>
         </div>
       )}
+      <hr className="divider " />
     </div>
   );
 };

@@ -246,7 +246,7 @@ function Herosection() {
               </ul>
             </div>
             <a
-              href="/find-buddy"
+              href="/browse"
               className="bg-white text-black px-4 py-2 rounded-full hover:bg-black hover:text-white"
             >
               Find your buddy
@@ -275,7 +275,7 @@ function Herosection() {
         </div>
       </div>
       {/* 4rth one side text another side img */}
-      <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-blue-600">
+      <div className="flex flex-col items-center justify-center min-h-screen p-6 " style={{ background: 'linear-gradient(to right, #1e3a8a, #3b82f6, #ffffff)' }}>
         {" "}
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4  mt-14">
           Empower your career with Expert Guidance.
@@ -341,14 +341,15 @@ function Herosection() {
               </div>
             ))}
           </div>
+          <a href="/browse">
           <button className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">
             View All
-          </button>
+          </button></a>
         </div>
       </div>
       {/* 6th   */}
       <div
-        className="flex flex-col items-center justify-center h-96 p-6 bg-blue-500"
+        className="flex flex-col items-center justify-center h-96 p-6 "
         style={{
           backgroundImage:
             'url("https://images.unsplash.com/photo-1588421357538-7c22591e4f90?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
@@ -358,13 +359,15 @@ function Herosection() {
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4  mt-14">
           Get Started Today
         </h1>
-        <p className="text-lg md:text-xl text-white mb-14">
+        <p className="text-lg md:text-xl  text-white mb-14">
           Connect with experienced mentors for personalized guidance and mock
           interviews to excel in your pursuits.
         </p>
-        <button className="bg-white font-bold text-black px-4 py-2 rounded-full hover:bg-black hover:text-white">
-          Browse all buddies
-        </button>
+        <a href="/browse">
+          <button className="bg-white font-bold text-black px-4 py-2 rounded-full hover:bg-black hover:text-white">
+            Browse all buddies
+          </button>
+        </a>
       </div>
       {/* 7th */}
       <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-100">
@@ -391,27 +394,34 @@ function Herosection() {
             'url("https://images.unsplash.com/photo-1614279629245-d7a138f035f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
         }}
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 mt-14">
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 mt-16">
           Become a part of PWBuddy community.
         </h1>
-        <p className="text-lg md:text-xl text-gray-400 mb-14">
+        <p className="text-lg md:text-xl max-w-3xl text-gray-400 mb-14 mt-7">
           Managers, executives and leaders agree that mentoring is one of the
           most impactful ways to spend your time. In return, you're building
           crucial leadership qualities.
         </p>
-        <button className="bg-white font-bold text-black px-4 py-2 rounded-full hover:bg-black hover:text-white">
-          Become a buddy
-        </button>
+        <a href="/browse">
+          <button className="bg-white font-bold text-black px-4 py-2 mb-14 rounded-full hover:bg-black hover:text-white">
+            Become a buddy
+          </button>
+        </a>
       </div>
       {/* 9th */}
-      <div className="bg-gray-100 py-12">
+      <div className="bg-gray-100 py-12 "  style={{
+          backgroundImage:
+            'url("https://migrexabogados.com/wp-content/uploads/2015/11/Savin-NY-Website-Background-Web.jpg")',
+        backgroundSize: 'cover',
+    backgroundPosition: 'center', 
+    backgroundRepeat: 'no-repeat'  }}   >
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8">
             Frequently Asked Questions
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-4">What is urBuddy?</h3>
+              <h3 className="text-xl font-semibold mb-4">What is PwBuddy?</h3>
               <p>
                 Platform connecting students with professionals for guidance and
                 mock interviews.
@@ -419,7 +429,7 @@ function Herosection() {
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-4">
-                How does urBuddy work?
+                How does PwBuddy work?
               </h3>
               <p>
                 Book sessions with seniors or professionals for guidance and
@@ -428,7 +438,7 @@ function Herosection() {
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-4">
-                Who can use urBuddy?
+                Who can use PwBuddy?
               </h3>
               <p>College students seeking mentorship and career advice.</p>
             </div>
@@ -473,7 +483,7 @@ function Herosection() {
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-4">
-                Is there a fee for using urBuddy?
+                Is there a fee for using PwBuddy?
               </h3>
               <p>
                 Pricing varies based on mentor expertise and session duration.
