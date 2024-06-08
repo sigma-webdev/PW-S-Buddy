@@ -9,6 +9,8 @@
 ![image](https://github.com/sigma-webdev/PW-S-Buddy/assets/107506646/702c0d1e-8b06-4f67-a547-e12d42dacd5a)
 ![image](https://github.com/sigma-webdev/PW-S-Buddy/assets/107506646/22e35ecc-cb31-4c5f-a8b2-7bcdfb064b55)
 ![image](https://github.com/sigma-webdev/PW-S-Buddy/assets/107506646/4aa9ecbe-aeb1-4b3b-a987-d329886a5590)
+![image](https://github.com/sigma-webdev/PW-S-Buddy/assets/107506646/b8ebba48-2eb6-40b0-a5ef-598c1d7dd30c)
+![image](https://github.com/sigma-webdev/PW-S-Buddy/assets/107506646/221433a5-1497-482d-afa8-a31c43dd1121)
 
 
 with responsive design 
