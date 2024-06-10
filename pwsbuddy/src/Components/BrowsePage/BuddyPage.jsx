@@ -160,7 +160,7 @@ const BuddyPage = () => {
       <h1 className="text-4xl text-center font-bold my-8">Book your session now.</h1>
       <p className="text-xl text-center my-8">
         Direct access to buddies for guidance and mock interviews. Elevate your
-        College journey with urBuddy.
+        College journey with PwBuddy.
       </p>
       <div className="flex flex-wrap md:p-10  p-6 mx-4">
   {buddies.slice(0, visibleBuddies).map((buddy, index) => (

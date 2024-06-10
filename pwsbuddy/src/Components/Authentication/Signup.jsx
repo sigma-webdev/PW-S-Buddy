@@ -300,7 +300,7 @@ const SignUp = () => {
         )}
       </div>
       <p className="max-w-xl text-center text-gray-500 mb-20">
-        By continuing, you agree to OSCode's emails with updates. Terms of
+        By continuing, you agree to PwBuddy's emails with updates. Terms of
         Service and Privacy Policy , and to receive periodic emails with
         updates.
       </p>

@@ -167,7 +167,7 @@ const Footer = () => {
 
       <div className="max-w-7xl mx-auto">
         <p className="text-center">
-          &copy; 2024 OSCode LLP. All rights reserved.
+          &copy; 2024 PwBuddy LLP. All rights reserved.
         </p>
       </div>
     </footer>
