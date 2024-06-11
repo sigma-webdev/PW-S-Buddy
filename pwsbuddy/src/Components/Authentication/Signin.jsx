@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../../assest/pwbuddy.png";
-
+import {Link} from "react-router-dom"
 const SignIn = () => {
   const [activeTab, setActiveTab] = useState('student');
   const [showPassword, setShowPassword] = useState(false);
@@ -17,12 +17,12 @@ const SignIn = () => {
       </h1>
       <p className="mt-2 mb-8 text-center text-md text-gray-600">
         Don't have an account?{" "}
-        <a
-          href="/signup"
+        <Link to
+="/signup"
           className="font-medium text-blue-600 hover:text-blue-500"
         >
           Sign Up Now
-        </a>
+        </Link>
       </p>
 
       <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md mb-8">
@@ -92,12 +92,11 @@ const SignIn = () => {
             </div>
             <div className="flex items-center justify-between">
               <div className="text-sm">
-                <a
-                  href="#"
+                <Link to="#"
                   className="font-medium text-blue-600 hover:text-blue-500"
                 >
                   Forgot password?
-                </a>
+                </Link>
               </div>
             </div>
             <div>
@@ -153,12 +152,11 @@ const SignIn = () => {
             </div>
             <div className="flex items-center justify-between">
               <div className="text-sm">
-                <a
-                  href="#"
+                <Link to="#"
                   className="font-medium text-blue-600 hover:text-blue-500"
                 >
                   Forgot password?
-                </a>
+                </Link>
               </div>
             </div>
             <div>
