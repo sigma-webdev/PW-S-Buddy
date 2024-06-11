@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import logo from "../../assest/pwbuddy.png";
 

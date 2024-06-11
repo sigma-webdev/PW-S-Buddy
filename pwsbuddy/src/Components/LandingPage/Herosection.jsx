@@ -177,7 +177,9 @@ function Herosection() {
       {/* 1st  */}
       <div
         className="flex flex-col items-center justify-center min-h-screen p-6 pt-28 md:pt-36 "
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{ backgroundImage: `url(${backgroundImage})` ,backgroundSize: 'cover',
+    
+    backgroundRepeat: 'no-repeat' }} 
       >
         <div className="text-center max-w-5xl  bg-opacity-80 rounded-lg p-6 md:p-10">
           <h1 className="text-5xl md:text-7xl font-bold text-black mb-4 md:mb-6">
@@ -275,7 +277,9 @@ function Herosection() {
         </div>
       </div>
       {/* 4rth one side text another side img */}
-      <div className="flex flex-col items-center justify-center min-h-screen p-6 " style={{ background: 'linear-gradient(to right, #1e3a8a, #3b82f6, #ffffff)' }}>
+      <div className="flex flex-col items-center justify-center min-h-screen p-6 " style={{ background: 'linear-gradient(to right, #1e3a8a, #3b82f6, #ffffff)',   backgroundSize: 'cover',
+    backgroundPosition: 'center', 
+    backgroundRepeat: 'no-repeat'  }}>
         {" "}
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4  mt-14">
           Empower your career with Expert Guidance.
@@ -352,7 +356,9 @@ function Herosection() {
         className="flex flex-col items-center justify-center h-96 p-6 "
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1588421357538-7c22591e4f90?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+            'url("https://images.unsplash.com/photo-1588421357538-7c22591e4f90?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',  backgroundSize: 'cover',
+    backgroundPosition: 'center', 
+    backgroundRepeat: 'no-repeat' 
         }}
       >
         {" "}
@@ -391,7 +397,9 @@ function Herosection() {
         className="flex flex-col items-center justify-center h-96 p-6 "
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1614279629245-d7a138f035f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+            'url("https://images.unsplash.com/photo-1614279629245-d7a138f035f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',  backgroundSize: 'cover',
+    backgroundPosition: 'center', 
+    backgroundRepeat: 'no-repeat' 
         }}
       >
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 mt-16">
