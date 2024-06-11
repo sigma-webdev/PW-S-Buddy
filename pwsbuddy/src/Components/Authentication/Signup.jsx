@@ -11,7 +11,7 @@ const SignUp = () => {
     setShowConfirmPassword(!showConfirmPassword);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 mt-20">
+    <div className="flex flex-col items-center justify-center  bg-gray-100 mt-20">
       <img src={logo} alt="Logo" className="h-20 mb-8 mt-8" />
       <h1 className="text-center text-xl text-black">Create Your Account</h1>
       <p className="mt-2 mb-8 text-center text-md text-gray-600">

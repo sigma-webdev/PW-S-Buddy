@@ -33,7 +33,7 @@ const buddies = [
     name: "Priya Singh",
     role: "Product Manager",
     company: "Ex-Flipkart",
-    institute: "Liverpool John Moores University",
+    institute: "Liverpool  University",
     image:
       "https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHVzZXIlMjBwcm9maWxlfGVufDB8fDB8fHww",
     skills: ["product", "startups", "analytics"],
@@ -121,7 +121,7 @@ const buddies = [
   },
   {
     name: "Nisha Patel",
-    role: "Management Consulting Associate",
+    role: "Management  Associate",
     company: "Accenture",
     institute: "IIT Delhi",
     image:
@@ -162,7 +162,7 @@ const BuddyPage = () => {
         Direct access to buddies for guidance and mock interviews. Elevate your
         College journey with PwBuddy.
       </p>
-      <div className="flex flex-wrap md:p-10  p-6 mx-4">
+      <div className="flex flex-wrap md:p-10  p-6 mx-4 ">
   {buddies.slice(0, visibleBuddies).map((buddy, index) => (
     <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-4">
       <BuddyCard buddy={buddy} />

@@ -10,7 +10,7 @@ const SignIn = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 mt-14">
+    <div className="flex flex-col items-center justify-center  bg-gray-100 mt-14">
       <img src={logo} alt="Logo" className="h-20 mt-12 mb-8" />
       <h1 className="text-center text-xl text-black">
         Sign in to your account

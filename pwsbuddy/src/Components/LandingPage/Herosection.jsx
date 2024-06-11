@@ -3,26 +3,27 @@ import careerImage1 from "../../assest/meet.gif";
 import careerImage2 from "../../assest/img.jpg";
 import careerImage4 from "../../assest/js.jpg";
 import careerImage3 from "../../assest/images (1).jpg";
-import amazonLogo from "../../assest/Flipkart-Logo.png";
-import flipkartLogo from "../../assest/Microsoft-Logo1.jpg";
-import oracleLogo from "../../assest/Oracle-Logo-1995-Present.png";
-import linkedinLogo from "../../assest/th (1).jpg";
-import GoogleLogo from "../../assest/th.jpg";
-import microsoftLogo from "../../assest/th (2).jpg";
+import amazonLogo from "../../assest/Amazon.svg";
+import flipkartLogo from "../../assest/Flipkart.svg";
+import oracleLogo from "../../assest/Walmart.svg";
+import linkedinLogo from "../../assest/LinkedIn.svg";
+import GoogleLogo from "../../assest/Paypal.svg";
+import microsoftLogo from "../../assest/Microsoft.svg";
 import backgroundImage from "../../assest/bg.jpg";
 import mentorImage from "../../assest/feature-2-1.svg";
 import profilePhoto from "../../assest/image.png";
+import Photo from "../../assest/download.jpg";
 import Cards from "./Cards";
 
 function Herosection() {
   // 1st
   const companies = [
     { logo: amazonLogo },
-    { logo: flipkartLogo },
-    { logo: oracleLogo },
-    { logo: linkedinLogo },
     { logo: GoogleLogo },
     { logo: microsoftLogo },
+    { logo: oracleLogo },
+    { logo: flipkartLogo },
+    { logo: linkedinLogo },
   ];
 
   // 4th
@@ -121,8 +122,7 @@ function Herosection() {
       company: "@Cimpress",
       testimonial:
         "Using PWBuddy, I landed my dream internship after receiving invaluable advice and mock interviews. Thank you for the career boost!",
-      image:
-        "https://images.unsplash.com/photo-1557862921-37829c790f19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fHww",
+      image: Photo,
     },
     {
       name: "Abhishek Kumar",
@@ -130,8 +130,7 @@ function Herosection() {
       company: "@Telstra",
       testimonial:
         "I was nervous about my upcoming interview at college, but PWBuddy provided instant access to mock interviews, boosting my confidence significantly.",
-      image:
-        "https://images.unsplash.com/photo-1557862921-37829c790f19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fHww",
+      image: Photo,
     },
     {
       name: "Diwakar Kumar",
@@ -139,8 +138,7 @@ function Herosection() {
       company: "@Syncron",
       testimonial:
         "As a recent graduate, I needed guidance navigating the job market. PWBuddy matched me with a mentor who provided invaluable insights.",
-      image:
-        "https://images.unsplash.com/photo-1557862921-37829c790f19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fHww",
+      image: Photo,
     },
     {
       name: "Deepak Singh",
@@ -148,8 +146,7 @@ function Herosection() {
       company: "@Flipkart",
       testimonial:
         "As a mentor on PWBuddy, I'm impressed by the platform's impact on fostering meaningful mentorship relationships.",
-      image:
-        "https://images.unsplash.com/photo-1557862921-37829c790f19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fHww",
+      image: Photo,
     },
     {
       name: "Harsh",
@@ -157,8 +154,7 @@ function Herosection() {
       company: "@Amazon",
       testimonial:
         "The convenience of scheduling sessions with professionals on PWBuddy makes it a must-have resource for any college student.",
-      image:
-        "https://images.unsplash.com/photo-1557862921-37829c790f19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fHww",
+      image: Photo,
     },
     {
       name: "Harsh Kumar",
@@ -166,8 +162,7 @@ function Herosection() {
       company: "@Boeing",
       testimonial:
         "Thanks to PWBuddy, I gained practical insights and advice that propelled me towards my career goals. Exceptional service!",
-      image:
-        "https://images.unsplash.com/photo-1557862921-37829c790f19?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZmVzc2lvbmFsJTIwbWFufGVufDB8fDB8fHww",
+      image: Photo,
     },
   ];
 
@@ -176,10 +171,13 @@ function Herosection() {
       {/* navbar */}
       {/* 1st  */}
       <div
-        className="flex flex-col items-center justify-center min-h-screen p-6 pt-28 md:pt-36 "
-        style={{ backgroundImage: `url(${backgroundImage})` ,backgroundSize: 'cover',
-    
-    backgroundRepeat: 'no-repeat' }} 
+        className="flex flex-col items-center justify-center py-16 mt-10   md:pt-36 "
+        style={{
+          backgroundImage: `url(${backgroundImage})`,
+          backgroundSize: "cover",
+
+          backgroundRepeat: "no-repeat",
+        }}
       >
         <div className="text-center max-w-5xl  bg-opacity-80 rounded-lg p-6 md:p-10">
           <h1 className="text-5xl md:text-7xl font-bold text-black mb-4 md:mb-6">
@@ -204,13 +202,13 @@ function Herosection() {
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
             Our Mentors come from
           </h2>
-          <ul className="flex flex-wrap justify-center">
+          <ul className="flex flex-wrap  items-center justify-center">
             {companies.map((company, index) => (
               <li key={index} className="m-2">
                 <img
                   src={company.logo}
                   alt={company.name}
-                  className="h-24 w-28"
+                  className="h-20 w-20 "
                 />
               </li>
             ))}
@@ -218,7 +216,7 @@ function Herosection() {
         </div>
       </div>
       {/* 2nd one side img and other side text*/}
-      <div className="flex flex-col p-6 md:p-12 lg:p-24 bg-blue-600 min-h-screen">
+      <div className="flex flex-col p-6 md:p-12 lg:p-24 bg-blue-600 ">
         <div className="flex flex-col md:flex-row max-w-8xl bg-blue-500 p-6 md:p-10 rounded-lg shadow-lg">
           <div className="flex-1 flex justify-center mb-6 md:mb-0">
             <img
@@ -257,7 +255,7 @@ function Herosection() {
         </div>
       </div>
       {/* 3rd card */}
-      <div className="flex flex-col items-center justify-center min-h-screen p-6 ">
+      <div className="flex flex-col items-center justify-center  p-6 ">
         <div className="bg-white shadow-lg rounded-lg p-6 md:p-10 max-w-md mx-auto">
           <div className="text-center mb-4">
             <img
@@ -277,9 +275,15 @@ function Herosection() {
         </div>
       </div>
       {/* 4rth one side text another side img */}
-      <div className="flex flex-col items-center justify-center min-h-screen p-6 " style={{ background: 'linear-gradient(to right, #1e3a8a, #3b82f6, #ffffff)',   backgroundSize: 'cover',
-    backgroundPosition: 'center', 
-    backgroundRepeat: 'no-repeat'  }}>
+      <div
+        className="flex flex-col items-center justify-center  p-6 "
+        style={{
+          background: "linear-gradient(to right, #1e3a8a, #3b82f6, #ffffff)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         {" "}
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4  mt-14">
           Empower your career with Expert Guidance.
@@ -317,7 +321,7 @@ function Herosection() {
         </div>
       </div>
       {/* 5th cards with view all */}
-      <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-100">
+      <div className="flex flex-col items-center justify-center  p-6 bg-gray-100">
         <div className="flex flex-col items-center rounded-lg p-6 md:p-10 max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
             Book your session now.
@@ -346,9 +350,10 @@ function Herosection() {
             ))}
           </div>
           <a href="/browse">
-          <button className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">
-            View All
-          </button></a>
+            <button className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition">
+              View All
+            </button>
+          </a>
         </div>
       </div>
       {/* 6th   */}
@@ -356,9 +361,10 @@ function Herosection() {
         className="flex flex-col items-center justify-center h-96 p-6 "
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1588421357538-7c22591e4f90?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',  backgroundSize: 'cover',
-    backgroundPosition: 'center', 
-    backgroundRepeat: 'no-repeat' 
+            'url("https://images.unsplash.com/photo-1588421357538-7c22591e4f90?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         {" "}
@@ -376,7 +382,7 @@ function Herosection() {
         </a>
       </div>
       {/* 7th */}
-      <div className="flex flex-col items-center justify-center min-h-screen p-6 bg-gray-100">
+      <div className="flex flex-col items-center justify-center  p-6 bg-gray-100">
         <div className="flex flex-col items-center rounded-lg p-6 md:p-10 max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold  mb-4">
             Hear What Our Users Say.
@@ -397,9 +403,10 @@ function Herosection() {
         className="flex flex-col items-center justify-center h-96 p-6 "
         style={{
           backgroundImage:
-            'url("https://images.unsplash.com/photo-1614279629245-d7a138f035f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',  backgroundSize: 'cover',
-    backgroundPosition: 'center', 
-    backgroundRepeat: 'no-repeat' 
+            'url("https://images.unsplash.com/photo-1614279629245-d7a138f035f0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
         }}
       >
         <h1 className="text-4xl md:text-5xl font-bold text-white mb-4 mt-16">
@@ -417,12 +424,16 @@ function Herosection() {
         </a>
       </div>
       {/* 9th */}
-      <div className="bg-gray-100 py-12 "  style={{
+      <div
+        className="bg-gray-100 py-12 "
+        style={{
           backgroundImage:
             'url("https://migrexabogados.com/wp-content/uploads/2015/11/Savin-NY-Website-Background-Web.jpg")',
-        backgroundSize: 'cover',
-    backgroundPosition: 'center', 
-    backgroundRepeat: 'no-repeat'  }}   >
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold mb-8">
             Frequently Asked Questions
