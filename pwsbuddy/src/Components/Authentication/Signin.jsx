@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import logo from "../../assest/pwbuddy.png";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 const SignIn = () => {
-  const [activeTab, setActiveTab] = useState('student');
+  const [activeTab, setActiveTab] = useState("student");
   const [showPassword, setShowPassword] = useState(false);
 
   const toggleShowPassword = () => {
@@ -11,14 +11,14 @@ const SignIn = () => {
 
   return (
     <div className="flex flex-col items-center justify-center  bg-gray-100 mt-14">
-      <img src={logo} alt="Logo" className="h-20 mt-12 mb-8" />
+      <img src={logo} alt="Logo" className="h-10 mt-12 mb-8" />
       <h1 className="text-center text-xl text-black">
         Sign in to your account
       </h1>
       <p className="mt-2 mb-8 text-center text-md text-gray-600">
         Don't have an account?{" "}
-        <Link to
-="/signup"
+        <Link
+          to="/signup"
           className="font-medium text-blue-600 hover:text-blue-500"
         >
           Sign Up Now
@@ -86,16 +86,23 @@ const SignIn = () => {
                   className="absolute inset-y-0 right-0 flex items-center px-2 focus:outline-none"
                   onClick={toggleShowPassword}
                 >
-                   {showPassword ? "Hide" : "Show"}
+                  {showPassword ? "Hide" : "Show"}
                 </button>
               </div>
             </div>
-            <div className="flex items-center justify-between">
+            <div className="flex justify-between">
               <div className="text-sm">
-                <Link to="#"
-                  className="font-medium text-blue-600 hover:text-blue-500"
+                <Link
+                  to="/forgetpassword"
+                  className="font-medium text-blue-600 hover:text-blue-500 mr-32"
                 >
                   Forgot password?
+                </Link>
+                <Link
+                  to="/resetpassword"
+                  className="font-medium text-blue-600 hover:text-blue-500"
+                >
+                  Reset password?
                 </Link>
               </div>
             </div>
@@ -133,29 +140,35 @@ const SignIn = () => {
                 Password
               </label>
               <div className="relative">
-        <input
-          type={showPassword ? 'text' : 'password'}
-          id="mentor-password"
-          name="mentor-password"
-          required
-          className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
-        />
-        <button
-          type="button"
-          className="absolute inset-y-0 right-0 flex items-center px-2 focus:outline-none"
-          onClick={toggleShowPassword}
-        >
-         {showPassword ? "Hide" : "Show"}
-               
-        </button>
-      </div>
+                <input
+                  type={showPassword ? "text" : "password"}
+                  id="mentor-password"
+                  name="mentor-password"
+                  required
+                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                />
+                <button
+                  type="button"
+                  className="absolute inset-y-0 right-0 flex items-center px-2 focus:outline-none"
+                  onClick={toggleShowPassword}
+                >
+                  {showPassword ? "Hide" : "Show"}
+                </button>
+              </div>
             </div>
-            <div className="flex items-center justify-between">
+            <div className="flex justify-between">
               <div className="text-sm">
-                <Link to="#"
-                  className="font-medium text-blue-600 hover:text-blue-500"
+                <Link
+                  to="/forgetpassword"
+                  className="font-medium text-blue-600 hover:text-blue-500 mr-32"
                 >
                   Forgot password?
+                </Link>
+                <Link
+                  to="/resetpassword"
+                  className="font-medium text-blue-600 hover:text-blue-500"
+                >
+                  Reset password?
                 </Link>
               </div>
             </div>
