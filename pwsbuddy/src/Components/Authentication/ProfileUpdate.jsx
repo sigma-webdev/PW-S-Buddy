@@ -2,7 +2,8 @@ import React from "react";
 
 const ProfileUpdate = () => {
   return (
-    <div className="max-w-md mx-auto my-8 sm:my-16 lg:my-32 bg-white shadow-lg rounded-lg p-6">
+    <div className="bg-gray-100 py-40">
+    <div className="max-w-md mx-auto  bg-white shadow-lg rounded-lg p-6">
       <h2 className="text-2xl font-bold mb-4 text-center lg:text-left">
         Update Profile
       </h2>
@@ -50,7 +51,7 @@ const ProfileUpdate = () => {
           </button>
         </div>
       </form>
-    </div>
+    </div></div>
   );
 };
 

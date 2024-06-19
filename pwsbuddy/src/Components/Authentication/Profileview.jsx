@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const ProfileView = () => {
   return (
+    <div className="bg-gray-100 py-40">
     <div className="max-w-3xl mx-auto my-8 sm:my-16 lg:my-32 bg-white shadow-xl rounded-lg overflow-hidden">
       <div className="bg-gradient-to-r from-blue-500 to-blue-600 p-6">
         <h2 className="text-3xl font-bold text-white text-center lg:text-left">Profile</h2>
@@ -39,7 +40,7 @@ const ProfileView = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div></div>
   );
 }
 
