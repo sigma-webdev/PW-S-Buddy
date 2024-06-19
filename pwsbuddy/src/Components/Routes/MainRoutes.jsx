@@ -8,6 +8,7 @@ import ForgotPassword from '../Authentication/ForgotPassword';
 import ResetPassword from '../Authentication/ResetPassword';
 import ProfileUpdate from '../Authentication/ProfileUpdate';
 import Profileview from '../Authentication/Profileview';
+import ChangePassword from '../Authentication/Changepassword';
 
 const MainRoutes = () => {
   return (
@@ -20,6 +21,7 @@ const MainRoutes = () => {
         <Route  path="/resetpassword" element={<ResetPassword/>}/>
         <Route  path="/profileupdate" element={<ProfileUpdate/>}/>
         <Route  path="/profileview" element={<Profileview/>}/>
+        <Route  path="/changepassword" element={<ChangePassword/>}/>
         <Route  path="/browse" element={<BuddyPage/>}/>
       </Routes>
     </div>
